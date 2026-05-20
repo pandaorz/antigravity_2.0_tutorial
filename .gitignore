@@ -1,0 +1,30 @@
+# ==========================================================================
+# Antigravity v2 - Git 忽略設定檔 (.gitignore)
+# ==========================================================================
+
+# 1. Python 臨時與快取檔案
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# 2. 自動生成之測試/數據圖表與臨時行政檔案
+examples/data_science/sales_performance.png
+examples/testing/screenshot.png
+examples/office_admin/meeting_release.eml
+examples/bash_scripts/system_monitor.log
+*.log
+
+# 3. 系統與編輯器臨時檔案
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

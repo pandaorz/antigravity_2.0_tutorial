@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity v2 互動體驗儀表板</title>
+    <!-- 引入高品質現代字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- 背景流光動畫裝飾 -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="container">
+        <!-- 頂部 Header -->
+        <header>
+            <div class="logo">Antigravity <span>v2</span></div>
+            <p class="subtitle">10x 效率的 Agentic AI 協作儀表板</p>
+        </header>
+
+        <!-- 主體網格 -->
+        <main class="dashboard-grid">
+            
+            <!-- 玻璃擬態卡片 1：v1 vs v2 大躍進 -->
+            <section class="card glass-card span-2" id="comparison-card">
+                <h2>⚔️ 世代變革：v1 與 v2 深度對比</h2>
+                <p class="card-desc">點擊下方切換，查看 v2 帶來的突破性革新特點。</p>
+                
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="switchTab('v2')">🚀 v2 新版亮點</button>
+                    <button class="tab-btn" onclick="switchTab('v1')">🧊 v1 舊版限制</button>
+                </div>
+
+                <div class="tab-content" id="comparison-content">
+                    <!-- 內容由 JS 安全動態渲染 -->
+                </div>
+            </section>
+
+            <!-- 玻璃擬態卡片 2：Slash Commands 模擬器 -->
+            <section class="card glass-card" id="cmd-simulator">
+                <h2>⚡ Slash 指令模擬器</h2>
+                <p class="card-desc">體驗 v2 獨特的斜線指令，模擬 Agent 背景執行與非同步喚醒！</p>
+                
+                <div class="command-input-group">
+                    <span class="prompt-symbol">&gt;</span>
+                    <input type="text" id="cmd-input" placeholder="輸入指令... (例如 /goal, /schedule, /browser)" readonly>
+                </div>
+
+                <div class="quick-commands">
+                    <button onclick="selectCommand('/goal 重構專案資安架構')">/goal</button>
+                    <button onclick="selectCommand('/schedule cron=&quot;0 */2 * * *&quot;')">/schedule</button>
+                    <button onclick="selectCommand('/browser 搜尋 PubMed 文獻')">/browser</button>
+                    <button onclick="selectCommand('/grill-me 設計聊天室架構')">/grill-me</button>
+                </div>
+
+                <button class="btn btn-primary" id="run-cmd-btn" onclick="executeSimulatedCommand()">執行模擬指令</button>
+
+                <!-- 模擬執行日誌區 -->
+                <div class="console-box" id="console-output">
+                    <span class="system-msg">[系統] 等待指令輸入...</span>
+                </div>
+            </section>
+
+            <!-- 玻璃擬態卡片 3：Agent 運作狀態 -->
+            <section class="card glass-card" id="agent-status-card">
+                <h2>🤖 Agent 狀態核心</h2>
+                <div class="status-indicator">
+                    <div class="status-dot pulse-idle" id="status-dot"></div>
+                    <span class="status-text" id="status-text">閒置中 (Idle - Reactive Mode)</span>
+                </div>
+
+                <div class="metrics">
+                    <div class="metric-item">
+                        <span class="metric-label">當前模式</span>
+                        <span class="metric-value">Planning Mode</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">安全邊界</span>
+                        <span class="metric-value text-success">Secure Coding (CWE-25)</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">長期記憶</span>
+                        <span class="metric-value text-info">已啟用 (MEMORY/ 運作中)</span>
+                    </div>
+                </div>
+
+                <div class="alert-box-mini">
+                    <strong>💡 知識科普：</strong> v2 採用 <em>Reactive Wakeup</em> 技術，在背景任務執行完畢前不消耗任何 Token，靜候回傳訊號自動喚醒！
+                </div>
+            </section>
+        </main>
+
+        <!-- 頁尾 -->
+        <footer>
+            <p>Antigravity v2.0 © 2026 - 全能 Agent 開發實踐手冊</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

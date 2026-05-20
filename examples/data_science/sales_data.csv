@@ -1,0 +1,13 @@
+Date,Product,Category,Sales,Cost
+2026-05-01,Product-A,Electronics,1200,800
+2026-05-01,Product-B,Electronics,1500,950
+2026-05-02,Product-C,Clothing,800,400
+2026-05-02,Product-A,Electronics,1100,750
+2026-05-03,Product-D,Home,950,550
+2026-05-03,Product-B,Electronics,1600,1000
+2026-05-04,Product-C,Clothing,850,420
+2026-05-04,Product-D,Home,1000,600
+2026-05-05,Product-A,Electronics,1300,850
+2026-05-05,Product-E,Clothing,700,300
+2026-05-06,Product-D,Home,1100,650
+2026-05-06,Product-B,Electronics,1400,900
