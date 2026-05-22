@@ -14,7 +14,10 @@
 2. [⚔️ 第一部分：Antigravity v2 核心革新與 v1 深度對比](#-第一部分antigravity-v2-核心革新與-v1-深度對比)
    - [IDE 模式大變革：v2 沒有傳統 IDE 怎麼辦？](#ide-模式大變革v2-沒有傳統-ide-怎麼辦)
    - [v1 vs v2 功能快速對照表](#v1-vs-v2-功能快速對照表)
-3. [🛠 第二部分：九大實戰場景教學與代碼說明](#-第二部分九大實戰場景教學與代碼說明)
+3. [🛡️ 第二部分：Antigravity v2 工具家族全景與協作生態](docs/tool_family.md)
+   - [Desktop App / IDE Extensions / CLI / SDK 全成員特色](docs/tool_family.md#-四大核心工具剖析)
+   - [企業級 CI/CD 自動化安全修補與 Code Review 協作案例](docs/tool_family.md#-跨工具家族協作實戰-symphony-workflow)
+4. [🛠 第三部分：九大實戰場景教學與代碼說明](#-第三部分九大實戰場景教學與代碼說明)
    - [場景 1：極致美學網頁開發](#場景-1極致美學網頁開發)
    - [場景 2：跨平台 Bash/PowerShell 腳本](#場景-2跨平台-bashpowershell-腳本)
    - [場景 3：學霸級筆記撰寫](#場景-3學霸級筆記撰寫)
@@ -24,8 +27,8 @@
    - [場景 7：數據彙整與圖表繪製 (Data Science)](#場景-7數據彙整與圖表繪製-data-science)
    - [場景 8：資料庫 Schema 設計與 SQL 調優 (Database)](#場景-8資料庫-schema-設計與-sql-調優-database)
    - [場景 9：Playwright 瀏覽器自動化 (Automation)](#場景-9playwright-瀏覽器自動化-automation)
-4. [🤖 第三部分：Agent 進階操作與 Subagents 指南](docs/agent_operations.md)
-5. [🧠 第四部分：長期記憶引擎 (Memory Engine) 與學習閉環](#-第四部分長期記憶引擎-memory-engine-與學習閉環)
+5. [🤖 第四部分：Agent 進階操作與 Subagents 指南](docs/agent_operations.md)
+6. [🧠 第五部分：長期記憶引擎 (Memory Engine) 與學習閉環](#-第五部分長期記憶引擎-memory-engine-與學習閉環)
 
 ---
 
@@ -34,6 +37,7 @@
 本教學專案在您的工作區中已建構了以下實體目錄與檔案，建議您搭配 VS Code 或其他編輯器點擊連結查看：
 
 *   **[README.md](README.md)**：本主教學手冊。
+*   **[docs/tool_family.md](docs/tool_family.md)**：Antigravity v2 工具家族成員（Desktop App, IDE, CLI, SDK）特色與跨工具自動化協作指南。
 *   **[docs/agent_operations.md](docs/agent_operations.md)**：Agent 進階操作、子代理協作與 Slash 指令的超詳細步驟手冊。
 *   **[examples/](examples/)**：
     *   **[web_app/](examples/web_app/)**：場景 1 — 極致美學的 Vite + Vanilla CSS 網頁系統。
@@ -86,7 +90,24 @@
 
 ---
 
-## 🛠 第二部分：九大實戰場景教學與代碼說明
+## 🛡️ 第二部分：Antigravity v2 工具家族全景與協作生態
+
+> [!IMPORTANT]
+> **「Antigravity v2 僅剩 Agent，這代表我們失去了其他工具支援嗎？」**
+> 
+> 絕對沒有！Google 宣布將旗下所有開發者 AI 工具整合，在 v2 中解耦為更強大的**四大核心成員**：
+> 1.  **Desktop App (Mission Control)**：多代理控制中樞，提供視覺化狀態監控與排程管理。
+> 2.  **IDE Extensions**：無縫整合本地 VS Code / JetBrains，提供 AI 滴入式修改與行內 Diff 對比。
+> 3.  **CLI (Go-based)**：高效能 Go 語言命令列工具，專為終端機自動化與 Git 鉤子 (Hooks) 設計。
+> 4.  **SDK (Python-based)**：程式化調用 Agent Runtime 的開發套件，可直接嵌入自定義應用程式。
+> 
+> 四大成員各司其職，並且能組成完美的協作流水線（例如 pre-commit 觸發 CLI 掃描 -> SDK 呼叫 Agent 自動修補並提交 PR -> Desktop App 審查成果）。
+> 
+> 📖 **[點此深入閱讀：Antigravity v2 工具家族成員特色與跨工具協作指南](docs/tool_family.md)**
+
+---
+
+## 🛠 第三部分：九大實戰場景教學與代碼說明
 
 為了讓您能百分之百掌握，以下我們將詳細說明這 9 個實戰場景。每個場景都有**詳細操作步驟**、**設計邏輯**與位於 `examples/` 目錄下的**實體檔案連結**。
 
@@ -200,7 +221,13 @@
 
 ---
 
-## 🧠 第三部分：長期記憶引擎 (Memory Engine) 與持續進化
+## 🤖 第四部分：Agent 進階操作與 Subagents 指南
+
+(請參考 [docs/agent_operations.md](docs/agent_operations.md))
+
+---
+
+## 🧠 第五部分：長期記憶引擎 (Memory Engine) 與持續進化
 
 在 Antigravity v2 中，**您的每一次對話與開發成果都不會被遺忘**。
 

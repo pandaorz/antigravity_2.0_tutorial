@@ -9,7 +9,7 @@
 *   **本地路徑**：`d:\Users\148015\Projects\antigravity_2.0_tutorial`
 *   **GitHub 帳號**：`pandaorz`
 *   **遠端倉庫**：[antigravity_2.0_tutorial](https://github.com/pandaorz/antigravity_2.0_tutorial)
-*   **更新時間**：2026-05-20 (台北時間)
+*   **更新時間**：2026-05-22 (台北時間)
 
 ---
 
@@ -34,12 +34,21 @@
 ### 4. 免密碼安全自動化部署 (GitHub CLI)
 *   **踩坑與實踐**：基於資安考量，AI 不應要求使用者提供帳密。透過偵測本地已配置並登入的 GitHub CLI (`gh` 工具)，以高安全性憑證（Token scopes: `repo`）自動完成遠端 Repository 建立與 Push，實現 100% 免密碼安全自動化。
 
+### 5. Antigravity v2 工具全景與協作生態基因
+*   **決策**：明確記錄 Antigravity 2.0 在 Google I/O 2026 的解耦革命（解耦為 Desktop App, IDE, CLI, SDK）。
+*   **規範**：
+    *   **Desktop App** 作為 Mission Control (控制中樞) 監控多代理任務。
+    *   **IDE Extensions** 提供 VS Code 內之 AI 滴入式局部修改與 Diff。
+    *   **CLI** 用於 CI/CD 與 Git pre-commit 自動化稽核。
+    *   **SDK** 提供 Python 程式化介面以擴充客製化 Agent 運作。
+
 ---
 
 ## 📂 階段性成果與檔案清單
 1.  **[README.md](../README.md)**：終極手冊入口，包含 9 大實戰場景引導。
-2.  **[docs/agent_operations.md](../docs/agent_operations.md)**：Agent 進階控制指南（子代理、長工排程、Slash 指令）。
-3.  **[examples/](../examples/)**：包含極致美學網頁、跨平台腳本、學霸筆記、EML 生成、SecOps 審查、PubMed 檢索、Pandas 數據分析、Database 優化、Playwright 測試等九大實體完整代碼。
+2.  **[docs/tool_family.md](../docs/tool_family.md)**：Antigravity v2 工具家族成員特色與跨工具自動化協作指南。
+3.  **[docs/agent_operations.md](../docs/agent_operations.md)**：Agent 進階控制指南（子代理、長工排程、Slash 指令）。
+4.  **[examples/](../examples/)**：包含極致美學網頁、跨平台腳本、學霸筆記、EML 生成、SecOps 審查、PubMed 檢索、Pandas 數據分析、Database 優化、Playwright 測試等九大實體完整代碼。
 
 ---
 
