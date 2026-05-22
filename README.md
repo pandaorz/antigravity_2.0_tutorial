@@ -14,9 +14,9 @@
 2. [⚔️ 第一部分：Antigravity v2 核心革新與 v1 深度對比](#-第一部分antigravity-v2-核心革新與-v1-深度對比)
    - [IDE 模式大變革：v2 沒有傳統 IDE 怎麼辦？](#ide-模式大變革v2-沒有傳統-ide-怎麼辦)
    - [v1 vs v2 功能快速對照表](#v1-vs-v2-功能快速對照表)
-3. [🛡️ 第二部分：Antigravity v2 工具家族全景與協作生態](docs/tool_family.md)
-   - [Desktop App / IDE Extensions / CLI / SDK 全成員特色](docs/tool_family.md#-四大核心工具剖析)
-   - [企業級 CI/CD 自動化安全修補與 Code Review 協作案例](docs/tool_family.md#-跨工具家族協作實戰-symphony-workflow)
+3. [🛡️ 第二部分：Antigravity 2.0 工具家族與 50 大實戰情境](docs/tool_family.md)
+   - [Desktop App (Agent Manager) / IDE v2 / CLI / SDK 特色](docs/tool_family.md#-四大核心工具剖析)
+   - [50 大實戰情境（含四大工具跨界協作 10 大情境）](docs/tool_family.md#-antigravity-50-大實戰情境終極指南)
 4. [🛠 第三部分：九大實戰場景教學與代碼說明](#-第三部分九大實戰場景教學與代碼說明)
    - [場景 1：極致美學網頁開發](#場景-1極致美學網頁開發)
    - [場景 2：跨平台 Bash/PowerShell 腳本](#場景-2跨平台-bashpowershell-腳本)
@@ -28,7 +28,7 @@
    - [場景 8：資料庫 Schema 設計與 SQL 調優 (Database)](#場景-8資料庫-schema-設計與-sql-調優-database)
    - [場景 9：Playwright 瀏覽器自動化 (Automation)](#場景-9playwright-瀏覽器自動化-automation)
 5. [🤖 第四部分：Agent 進階操作與 Subagents 指南](docs/agent_operations.md)
-6. [🧠 第五部分：長期記憶引擎 (Memory Engine) 與學習閉環](#-第五部分長期記憶引擎-memory-engine-與學習閉環)
+6. [🧠 第五部分：長期記憶引擎 (Memory Engine) 與持續進化](#-第五部分長期記憶引擎-memory-engine-與持續進化)
 
 ---
 
@@ -90,20 +90,20 @@
 
 ---
 
-## 🛡️ 第二部分：Antigravity v2 工具家族全景與協作生態
+## 🛡️ 第二部分：Antigravity 2.0 工具家族與 50 大實戰情境
 
 > [!IMPORTANT]
-> **「Antigravity v2 僅剩 Agent，這代表我們失去了其他工具支援嗎？」**
+> **「Antigravity v2 (Agent Manager) 專注於 Mission Control 任務控制，代碼編輯交給誰？」**
 > 
-> 絕對沒有！Google 宣布將旗下所有開發者 AI 工具整合，在 v2 中解耦為更強大的**四大核心成員**：
-> 1.  **Desktop App (Mission Control)**：多代理控制中樞，提供視覺化狀態監控與排程管理。
-> 2.  **IDE Extensions**：無縫整合本地 VS Code / JetBrains，提供 AI 滴入式修改與行內 Diff 對比。
-> 3.  **CLI (Go-based)**：高效能 Go 語言命令列工具，專為終端機自動化與 Git 鉤子 (Hooks) 設計。
-> 4.  **SDK (Python-based)**：程式化調用 Agent Runtime 的開發套件，可直接嵌入自定義應用程式。
+> 在 Antigravity 2.0 中，AI 開發工具鏈進行了專業解耦，形成了更強大的**四大核心成員**：
+> 1.  **Antigravity v2 (Agent Manager)**：桌面端控制中樞 (Mission Control)，專門負責多代理調度、MCP 集中管理、Daemon 排程與安全沙盒，已無內建的 IDE 編輯介面。
+> 2.  **Antigravity IDE v2**：代碼編輯與 Agent 協作的直系繼承者，無縫嵌入本地 VS Code / JetBrains，承接代碼的「滴入式修改與 Diff」。
+> 3.  **Antigravity CLI (Go-based)**：高效能 Go 語言命令列工具，專為終端機自動化與 Git 鉤子 (Hooks) 設計。
+> 4.  **Antigravity SDK (Python-based)**：程式化調用與客製化擴充 Agent Runtime 的開發套件，可直接嵌入自定義 Python 應用。
 > 
-> 四大成員各司其職，並且能組成完美的協作流水線（例如 pre-commit 觸發 CLI 掃描 -> SDK 呼叫 Agent 自動修補並提交 PR -> Desktop App 審查成果）。
+> 四大成員各司其職，並且能組成完美的協作流水線（例如 pre-commit 觸發 CLI 掃描 -> SDK 呼叫 Agent 自動修補並提交 PR -> Desktop App 審查成果）。同時，我們在手冊中鋪開了 **50 個 100% 無佔位符的實戰情境**！
 > 
-> 📖 **[點此深入閱讀：Antigravity v2 工具家族成員特色與跨工具協作指南](docs/tool_family.md)**
+> 📖 **[點此深入閱讀：Antigravity 2.0 工具家族與 50 大實戰情境終極寶典](docs/tool_family.md)**
 
 ---
 
