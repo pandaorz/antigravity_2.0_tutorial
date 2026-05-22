@@ -24,14 +24,14 @@
 
 ```mermaid
 graph TD
-    subgraph Antigravity v1 (舊版一體化)
-        V1_Agent[Agent] <--> V1_IDE[網頁內建 IDE]
+    subgraph "Antigravity v1 (舊版一體化)"
+        V1_Agent["Agent"] <--> V1_IDE["網頁內建 IDE"]
     end
 
-    subgraph Antigravity 2.0 生態系 (專業解耦)
-        V2_IDE[Antigravity IDE v2<br/>本地編輯器擴充/專屬環境] <-->|代碼編修與行內提示| V2_AM[Antigravity v2 Desktop<br/>Agent Manager]
-        V2_CLI[Antigravity CLI<br/>Go 高效能終端工具] <-->|CLI 觸發與 Git 鉤子| V2_AM
-        V2_SDK[Antigravity SDK<br/>Python 程式化介面] <-->|客製化 Agent 整合| V2_AM
+    subgraph "Antigravity 2.0 生態系 (專業解耦)"
+        V2_IDE["Antigravity IDE v2<br/>本地編輯器擴充/專屬環境"] <-->|代碼編修與行內提示| V2_AM["Antigravity v2 Desktop<br/>Agent Manager"]
+        V2_CLI["Antigravity CLI<br/>Go 高效能終端工具"] <-->|CLI 觸發與 Git 鉤子| V2_AM
+        V2_SDK["Antigravity SDK<br/>Python 程式化介面"] <-->|客製化 Agent 整合| V2_AM
     end
 
     V1_IDE -->|直系演進| V2_IDE
